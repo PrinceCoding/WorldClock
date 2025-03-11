@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Embed Time and Date</title>
+  <meta charset="UTF-8">
+  <title>Embed Time and Date World Clock</title>
   <style>
-    /* Optional: Make the iframe fill the browser window. */
+    /* Optional: let the iframe fill the whole page */
     html, body {
       margin: 0;
       padding: 0;
@@ -18,14 +18,14 @@
   </style>
 </head>
 <body>
-  <!-- Attempt to embed the entire site in an iframe -->
+  <!-- Attempt to load Time and Date in an iframe -->
   <iframe 
-    src="https://www.timeanddate.com/worldclock/" 
-    allowfullscreen
+    src="https://www.timeanddate.com/worldclock/"
     loading="lazy"
+    allowfullscreen
   >
-    <!-- Fallback message if iframe isn't supported -->
-    <p>Your browser does not support iframes.</p>
+    <!-- If iframes aren't supported or are blocked, show this fallback -->
+    <p>Your browser does not support iframes or the site is blocking iframe access.</p>
   </iframe>
 </body>
 </html>
